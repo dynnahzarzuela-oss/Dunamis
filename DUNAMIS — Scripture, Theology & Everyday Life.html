@@ -540,7 +540,7 @@ var FIN=[["God’s Ownership",[["Cross References","Psalm 24:1|Haggai 2:8|Deuter
 var MIS=[["Funding God’s Work",[["Cross References","Philippians 4:15-19|Romans 10:13-15|3 John 5-8"]]],["The Harvest",[["Cross References","Matthew 9:37-38|John 4:35-38|Revelation 14:14-16"]]],["Global Mission",[["Cross References","Matthew 24:14|Acts 13:47|Revelation 7:9-10"]]]];
 var ML=[["Freedom from condemnation","No verdict of guilt stands against those in Christ.","Romans 8:1"],["Life through the Spirit","Setting the mind on the Spirit brings life and peace.","Romans 8:5-11"],["Adoption into God’s family","You are a child and heir, not a slave.","Romans 8:15-17"],["Hope amid suffering","Present pain is outweighed by coming glory.","Romans 8:18-25"],["Future resurrection","The Spirit who raised Jesus will give life to our bodies.","Romans 8:11"],["God’s sovereign purpose","God works all things for good and shapes us like Christ.","Romans 8:28-30"],["Assurance in Christ","Nothing can separate us from God’s love.","Romans 8:31-39"],["Spirit-empowered living","By the Spirit we put to death the deeds of the body.","Romans 8:13-14"],["Faithful stewardship","Gifts, work, and money are entrusted to us for God’s purposes.","1 Corinthians 4:2"],["Kingdom mission","Blessed to bless, we join God’s harvest among all nations.","Matthew 28:18-20"]];
 
-/* cross-reference sheet + topic filter */
+/* cross-reference sheet + topic filters */
 var sheet=document.getElementById("sheet");
 function openRef(r){var m=/^Romans 8:(\d+)(?:-(\d+))?$/.exec(r),b;
  if(m&&+(m[2]||m[1])<=39){var x=+m[1],y=+(m[2]||m[1]),v="";for(var n=x;n<=y;n++)v+='<p class="verse"><sup>'+n+'</sup>'+esc(R8[n-1])+'</p>';b=v+'<p class="muted">King James Version</p>'}
